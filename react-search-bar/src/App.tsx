@@ -1,10 +1,11 @@
-import './App.css'
-
 function App() {
 
   return (
     <div className='App'>
-      Hello World!
+      <div className="searchBarContainer">
+        <div>SearchBar</div>
+        <div>SearchResults</div>
+      </div>
     </div>
   )
 }
