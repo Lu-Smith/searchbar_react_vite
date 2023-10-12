@@ -9,9 +9,9 @@ const SearchBar = () => {
         .then((response) => response.json())
         .then((json) => {
             const results = json.filter((user: {name: string}) => {
-                return user && user.name && user.name.toLowerCase().includes(value)
+                return value && user && user.name && user.name.toLowerCase().includes(value)
             });
-            console.log(results)
+            console.log(results);
         });
     };
 
