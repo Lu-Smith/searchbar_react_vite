@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 
-const SearchBar = () => {
+interface SearchBarProps {
+    setResults: (results: string[]) => void;
+}
+
+const SearchBar = ({setResults}: SearchBarProps) => {
     const [input, setInput] = useState("");
 
     const fetchData = (value: string) => {
@@ -11,7 +15,7 @@ const SearchBar = () => {
             const results = json.filter((user: {name: string}) => {
                 return value && user && user.name && user.name.toLowerCase().includes(value)
             });
-            console.log(results);
+            setResults(results);
         });
     };
 
