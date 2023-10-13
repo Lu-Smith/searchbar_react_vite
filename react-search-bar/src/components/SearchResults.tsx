@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const SearchResults = () => {
+interface ResultsProps {
+    results: { name: string }[];
+}
+
+const SearchResults = ({results}: ResultsProps) => {
   return (
-    <div>SearchResults</div>
+    <div className='resultsList'>
+        {results.map((result, id: number )=> {
+            return <div key={id}>{result.name}</div>
+        })}
+    </div>
   )
 }
 
