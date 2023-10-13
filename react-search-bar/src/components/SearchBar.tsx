@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 
 interface SearchBarProps {
-    setResults: (results: string[]) => void;
+    setResults: (results: { name: string }[]) => void;
 }
 
 const SearchBar = ({setResults}: SearchBarProps) => {
