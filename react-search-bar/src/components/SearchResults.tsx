@@ -8,7 +8,7 @@ const SearchResults = ({results}: ResultsProps) => {
   return (
     <div className='resultsList'>
         {results.map((result, id: number )=> {
-            return <div key={id}>{result.name}</div>
+            return <div key={id} onClick={() => alert(`You click on ${result.name}`)}>{result.name}</div>
         })}
     </div>
   )
