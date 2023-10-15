@@ -8,6 +8,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Puzzle from './components/pages/Puzzle';
+import SideBar from './components/SideBar';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <div className='App'>
       <div className="searchBarContainer">
         <NavBar />
+        <SideBar />
         <Routes>
         <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
