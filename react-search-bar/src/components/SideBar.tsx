@@ -2,7 +2,17 @@ import React from 'react'
 
 const SideBar = () => {
   return (
-    <div>SideBar</div>
+    <div>
+        <ul>
+            <li>🌞</li>
+            <li>🎨</li>
+            <li>💗</li>
+            <li>🍃</li>
+            <li>😃</li>
+            <li>🥹</li>
+            <li>❄️</li>
+        </ul>
+    </div>
   )
 }
 
