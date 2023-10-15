@@ -10,10 +10,15 @@ export default {
         appear: {
           '0%': { transform: 'translateX(-30vw)' },
           '100%': { transform: 'translateX(0)' },
+        },
+        disappear: {
+          '0%': { transform: 'translateX(30vw)' },
+          '100%': { transform: 'translateX(-30vw)' },
         }
       },
       animation: {
-        'appearFromLeft': 'appear 5s linear',
+        'disappearFromLeft': 'disappear 3s linear',
+        'appearFromLeft': 'appear 3s linear',
       }
     },
   },
