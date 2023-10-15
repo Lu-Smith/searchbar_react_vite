@@ -6,7 +6,15 @@ const Footer = () => {
         <h4>Coded by 
             <a href="https://www.lunasmithart.com/" target='_blank' rel="noreferrer">Luna Smith</a> - 
             <a href="https://github.com/Lu-Smith/searchbar_react_vite" target='_blank' rel="noreferrer"> OPEN SOURCE</a>.</h4>
-        <button className='text-white px-4 sm:px-8 py-2 sm:py-3 bg-sky-700 hover:bg-sky-800'>Click me</button>
+        <button 
+        className='ring-1 ring-offset-4
+        ring-green-800 rounded-md
+         bg-green-600 px-5 py-1 
+         text-white hover:bg-sky-800 
+         hover:text-zinc-200 
+         sm:px-7 sm:py-2
+         hover:ring-blue-300'
+         >Click me</button>
     </div>
   )
 }
