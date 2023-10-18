@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='text-center p-4'>
+    <div className='text-center p-8'>
       <h3>To explore more of my art projects or get in touch, please visit my 
         <a 
           className='text-green-800 hover:text-blue-800 transition duration-300 ml-1 mr-1 
