@@ -11,7 +11,7 @@ const Home = () => {
   const [results, setResults] = useState<AppProps['results']>([])
 
   return (
-    <div>
+    <div className='text-center py-4'>
         <SearchBar setResults={setResults} />
         <SearchResults results={results} />
     </div>
