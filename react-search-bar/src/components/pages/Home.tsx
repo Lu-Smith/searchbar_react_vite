@@ -11,7 +11,7 @@ const Home = () => {
   const [results, setResults] = useState<AppProps['results']>([])
 
   return (
-    <div className='text-center py-4'>
+    <div className='flex-col flex  justify-center content-center p-8'>
         <SearchBar setResults={setResults} />
         <SearchResults results={results} />
     </div>
