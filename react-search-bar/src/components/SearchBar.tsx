@@ -25,13 +25,14 @@ const SearchBar = ({setResults}: SearchBarProps) => {
     }
 
   return (
-    <div className='input-wrapper'>
-        <FaSearch id="search-icon" />
+    <div className='flex-row flex justify-center content-center p-4 bg-green-600 w-1/2 rounded shadow-lg shadow-slate-300'>
+        <FaSearch className='text-cyan-800' />
         <input 
         type="text" 
         placeholder='Type to search...' 
         value={input}
         onChange={(e) => handleChange(e.target.value)}
+        className='p-2'
         />
     </div>
   )

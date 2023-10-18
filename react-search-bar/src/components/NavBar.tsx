@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div 
     className='bg-slate-200 p-2 flex flex-row justify-between 
-    items-center shadow-md shadow-slate-150'>
+    items-center shadow-md shadow-slate-300'>
       <Link to="/"><img src={Logo} alt="Logo" className='hover:animate-spin flex-none w-14 h-14'/></Link>
       <ul className='flex flex-row justify-around items-end gap-2' >
         <NavLink 
