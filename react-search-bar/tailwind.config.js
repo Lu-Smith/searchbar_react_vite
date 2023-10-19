@@ -22,6 +22,7 @@ export default {
       },
       backgroundImage: {
         'painting1': "url('./assets/paintingLunaSmith.jpg')",
+        'painting2': "url('./assets/paintingLunaSmith2.jpg')",
       }
     },
   },

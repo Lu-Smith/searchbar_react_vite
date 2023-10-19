@@ -16,7 +16,7 @@ const Puzzle = () => {
   };
 
   return (
-    <div className='text-center my-4 flex justify-center items-center'>
+    <div className='text-center my-8 flex justify-center items-center'>
     <div className='grid grid-rows-4 grid-flow-col justify-items-center items-center 
     bg-green-800 w-[450px] h-[600px] bg-painting1 bg-center bg-contain'>
       {boxes.map((box, index) => {
