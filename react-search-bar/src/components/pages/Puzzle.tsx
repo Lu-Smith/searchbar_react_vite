@@ -16,6 +16,12 @@ const Puzzle = () => {
     setBoxes(updatedBoxes);
   };
 
+  const handleNewPainting = () => {
+    setNewPainting(!newPainting)
+    setBoxes(initialNumbers);
+    setOpenBox(Array(12).fill(false))
+  }
+
   return (
     <div className='text-center my-8 flex flex-col justify-center items-center'>
     <div className={`grid grid-rows-4 grid-flow-col justify-items-center items-center 
@@ -32,7 +38,7 @@ const Puzzle = () => {
         );
       })}
     </div>
-    <button onClick={() => setNewPainting(!newPainting)}>New Puzzle</button>
+    <button onClick={handleNewPainting}>New Puzzle</button>
   </div>
   );
 }
