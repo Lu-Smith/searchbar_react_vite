@@ -1,13 +1,18 @@
 import React, { useState } from 'react'
 
 const Puzzle = () => {
-  const [openBox, setOpenBox] = useState(new Array(12).fill(false))
-  const boxes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const [openBox, setOpenBox] = useState(Array(12).fill(false))
+  const initialNumbers = Array(12).fill('').map((_, index) => (index + 1).toString());
+  const [boxes, setBoxes] = useState(initialNumbers);
 
   const toggleBox = (index:number) => {
     const updatedOpenBoxes = [...openBox];
     updatedOpenBoxes[index] = !updatedOpenBoxes[index];
     setOpenBox(updatedOpenBoxes);
+
+    const updatedBoxes = [...boxes];
+    updatedBoxes[index] = '';
+    setBoxes(updatedBoxes);
   };
 
   return (
