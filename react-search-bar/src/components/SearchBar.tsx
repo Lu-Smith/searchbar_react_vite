@@ -27,15 +27,14 @@ const SearchBar = ({setResults}: SearchBarProps) => {
   return (
     <div 
     className='flex-row flex justify-center content-center p-4
-     bg-green-600 w-1/2 rounded shadow-lg shadow-slate-300 
-     placeholder-green-600 font-semibold text-base'>
+     bg-green-600 rounded shadow-lg shadow-slate-300 w-full'>
         <FaSearch className='text-cyan-800 text-3xl bg-white p-2 w-12 h-12 rounded-s' />
         <input 
         type="text" 
         placeholder='Type to search...' 
         value={input}
         onChange={(e) => handleChange(e.target.value)}
-        className='p-2 rounded-e'
+        className='p-2 rounded-e focus:outline-none placeholder-green-600 font-semibold'
         />
     </div>
   )
