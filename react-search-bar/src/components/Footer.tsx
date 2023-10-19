@@ -6,7 +6,7 @@ const Footer = () => {
   const [openSideBar, setOpenSideBar] = useState(false);
 
   return (
-    <div className='relative transition-all duration-300 ease-in-out delay-150'>
+    <div className='transition-all duration-300 ease-in-out delay-150'>
       <SideBar openSideBar={openSideBar} />
       <div className='relative flex flex-col items-center justify-center h-screen'>
           <h4 className='position: fixed bottom-20'>Coded by 

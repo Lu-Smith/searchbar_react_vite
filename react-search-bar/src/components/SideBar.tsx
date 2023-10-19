@@ -7,7 +7,7 @@ interface SideBarProps {
 const SideBar = ({openSideBar}: SideBarProps) => {
 
   return (
-    <div className={`bg-black w-40 py-6 text-center rounded absolute top-0 
+    <div className={`bg-black w-40 py-6 text-center rounded absolute top-24 
     ${openSideBar ? 'left-0' : 'left-[-30vw]'}
     ${openSideBar ? 'animate-appearFromLeft' : 'animate-disappearFromLeft'}`}>
         <ul className='text-6xl'>
