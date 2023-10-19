@@ -19,6 +19,9 @@ export default {
       animation: {
         'disappearFromLeft': 'disappear 3s linear',
         'appearFromLeft': 'appear 3s linear',
+      },
+      backgroundImage: {
+        'painting1': "url('./assets/paintingLunaSmith.jpg')",
       }
     },
   },
