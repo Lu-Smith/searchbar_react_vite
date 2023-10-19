@@ -4,6 +4,7 @@ const Puzzle = () => {
   const [openBox, setOpenBox] = useState(Array(12).fill(false))
   const initialNumbers = Array(12).fill('').map((_, index) => (index + 1).toString());
   const [boxes, setBoxes] = useState(initialNumbers);
+  const [newPainting, setNewPainting] = useState(false);
 
   const toggleBox = (index:number) => {
     const updatedOpenBoxes = [...openBox];
@@ -16,9 +17,9 @@ const Puzzle = () => {
   };
 
   return (
-    <div className='text-center my-8 flex justify-center items-center'>
-    <div className='grid grid-rows-4 grid-flow-col justify-items-center items-center 
-    bg-green-800 w-[450px] h-[600px] bg-painting1 bg-center bg-contain'>
+    <div className='text-center my-8 flex flex-col justify-center items-center'>
+    <div className={`grid grid-rows-4 grid-flow-col justify-items-center items-center 
+    bg-green-800 w-[450px] h-[600px] ${newPainting ? 'bg-painting2' : 'bg-painting1'} bg-center bg-contain`}>
       {boxes.map((box, index) => {
         return (
           <div
@@ -31,6 +32,7 @@ const Puzzle = () => {
         );
       })}
     </div>
+    <button onClick={() => setNewPainting(!newPainting)}>New Puzzle</button>
   </div>
   );
 }
