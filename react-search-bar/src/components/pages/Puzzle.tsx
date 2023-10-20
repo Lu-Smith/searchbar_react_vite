@@ -31,9 +31,9 @@ const Puzzle = () => {
           <div
             key={index}
             onClick={() => toggleBox(index)}
-            className={` ${openBox[index] ? 'bg-transparent' : 'bg-red-200'} text-white w-[150px] h-[150px] flex justify-center items-center`}
+            className={` ${openBox[index] ? 'bg-transparent' : 'bg-red-200 border-white border-2'} text-white w-[150px] h-[150px] flex justify-center items-center`}
           >
-            <div >{box}</div>
+            <div className='text-xl'>{box}</div>
           </div>
         );
       })}
